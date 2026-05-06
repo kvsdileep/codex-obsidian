@@ -45,6 +45,8 @@ For tweets and chats, drop exports into:
 
 ## Daily Usage
 
+Start with [START_HERE.md](START_HERE.md) for the first Web Clipper, Slack tweet, and exported-chat workflows.
+
 From Codex or Slack, use plain language:
 
 - `ingest new web clips`
