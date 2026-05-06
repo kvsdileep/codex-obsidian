@@ -15,3 +15,7 @@ sources: []
 # Topics Index
 
 Topic notes will appear here after ingestion.
+
+## Active Topics
+
+- [[wiki/topics/AI Daily Updates|AI Daily Updates]]

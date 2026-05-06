@@ -3,7 +3,7 @@
 This vault has three ingestion lanes:
 
 1. Web clips from the Obsidian Web Clipper
-2. Tweets collected from Slack channel `#daily-ai-update`
+2. Tweets collected from Slack channel `#daily-ai-updates`
 3. Exported chats from Claude, ChatGPT, Codex, or other assistants
 
 ## 1. Web Clipper
@@ -48,26 +48,26 @@ Codex will process `.raw/articles/`, create source notes in `wiki/sources/`, ext
 Target channel:
 
 ```text
-#daily-ai-update
+#daily-ai-updates
 ```
 
 Best workflow:
 
 1. Make sure the Slack connector is enabled in Codex.
-2. Keep tweet URLs in `#daily-ai-update`.
+2. Keep tweet URLs in `#daily-ai-updates`.
 3. Reuse the X API bearer token already configured by the `follow-builders` skill. The expected location is `~/.follow-builders/.env` with `X_BEARER_TOKEN` set. Do not copy the token into this vault.
 
 Then ask Codex:
 
 ```text
-From Slack #daily-ai-update, get the last 10 tweet URLs, use scripts/fetch-x-tweets.mjs with the X_BEARER_TOKEN from ~/.follow-builders/.env, save them into .raw/tweets/YYYY-MM-DD-daily-ai-update.md, then ingest them.
+From Slack #daily-ai-updates, get the last 10 tweet URLs, use scripts/fetch-x-tweets.mjs with the X_BEARER_TOKEN from ~/.follow-builders/.env, save them into .raw/tweets/YYYY-MM-DD-daily-ai-updates.md, then ingest them.
 ```
 
 The local helper can also be run directly:
 
 ```bash
 printf '%s\n' 'https://x.com/user/status/1234567890' \
-  | node scripts/fetch-x-tweets.mjs --out .raw/tweets/YYYY-MM-DD-daily-ai-update.md
+  | node scripts/fetch-x-tweets.mjs --out .raw/tweets/YYYY-MM-DD-daily-ai-updates.md
 ```
 
 Codex should save a raw markdown file like this:
@@ -75,7 +75,7 @@ Codex should save a raw markdown file like this:
 ```markdown
 ---
 source_type: tweets
-source_channel: "#daily-ai-update"
+source_channel: "#daily-ai-updates"
 collected: YYYY-MM-DD
 count: 10
 ---
@@ -138,7 +138,7 @@ ingest new web clips
 ```
 
 ```text
-From Slack #daily-ai-update, get the last 10 tweet URLs, fetch their content using scripts/fetch-x-tweets.mjs and the follow-builders X_BEARER_TOKEN, save to .raw/tweets, and ingest.
+From Slack #daily-ai-updates, get the last 10 tweet URLs, fetch their content using scripts/fetch-x-tweets.mjs and the follow-builders X_BEARER_TOKEN, save to .raw/tweets, and ingest.
 ```
 
 ```text

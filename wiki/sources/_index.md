@@ -15,3 +15,7 @@ sources: []
 # Sources Index
 
 Source summaries will appear here after ingestion.
+
+## Tweets
+
+- [[wiki/sources/2026-05-06-daily-ai-updates|Daily AI Updates - 2026-05-06]]

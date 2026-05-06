@@ -1,3 +1,29 @@
 {
-  "sources": {}
+  "sources": {
+    ".raw/tweets/2026-05-06-daily-ai-updates.md": {
+      "hash": "ef74ae2cfbd59f22ddb4169cff6ee915c4c60cc837b79e3623a1a851b9739f17",
+      "ingested_at": "2026-05-06",
+      "pages_created": [
+        "wiki/sources/2026-05-06-daily-ai-updates.md",
+        "wiki/topics/AI Daily Updates.md",
+        "wiki/concepts/Multi-Token Prediction.md",
+        "wiki/concepts/AI Advertising Infrastructure.md",
+        "wiki/concepts/Long Context Sparse Attention.md",
+        "wiki/concepts/AI Finance Workflows.md",
+        "wiki/entities/Gemma.md",
+        "wiki/entities/OpenAI.md",
+        "wiki/entities/SubQ.md",
+        "wiki/entities/Perplexity.md"
+      ],
+      "pages_updated": [
+        "wiki/index.md",
+        "wiki/hot.md",
+        "wiki/log.md",
+        "wiki/sources/_index.md",
+        "wiki/concepts/_index.md",
+        "wiki/entities/_index.md",
+        "wiki/topics/_index.md"
+      ]
+    }
+  }
 }

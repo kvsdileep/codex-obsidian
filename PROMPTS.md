@@ -13,7 +13,7 @@ Ingest new tweet exports from .raw/tweets. Treat tweets as idea sparks: preserve
 ```
 
 ```text
-From Slack #daily-ai-update, get the last 10 tweet URLs, fetch their content using scripts/fetch-x-tweets.mjs and the follow-builders X_BEARER_TOKEN in ~/.follow-builders/.env, save the raw markdown to .raw/tweets/YYYY-MM-DD-daily-ai-update.md, then ingest it.
+From Slack #daily-ai-updates, get the last 10 tweet URLs, fetch their content using scripts/fetch-x-tweets.mjs and the follow-builders X_BEARER_TOKEN in ~/.follow-builders/.env, save the raw markdown to .raw/tweets/YYYY-MM-DD-daily-ai-updates.md, then ingest it.
 ```
 
 ## Chats

@@ -12,7 +12,7 @@ function parseArgs(argv) {
   const args = {
     out: null,
     env: DEFAULT_ENV_PATH,
-    channel: '#daily-ai-update',
+    channel: '#daily-ai-updates',
     urls: []
   };
 
@@ -36,13 +36,13 @@ function parseArgs(argv) {
 
 function showHelp() {
   console.log(`Usage:
-  node scripts/fetch-x-tweets.mjs [tweet-url ...] --out .raw/tweets/YYYY-MM-DD-daily-ai-update.md
-  printf '%s\\n' '<tweet-url>' | node scripts/fetch-x-tweets.mjs --out .raw/tweets/YYYY-MM-DD-daily-ai-update.md
+  node scripts/fetch-x-tweets.mjs [tweet-url ...] --out .raw/tweets/YYYY-MM-DD-daily-ai-updates.md
+  printf '%s\\n' '<tweet-url>' | node scripts/fetch-x-tweets.mjs --out .raw/tweets/YYYY-MM-DD-daily-ai-updates.md
 
 Options:
   --out <path>       Write markdown output to a file. If omitted, prints to stdout.
   --env <path>       Env file containing X_BEARER_TOKEN. Default: ~/.follow-builders/.env
-  --channel <name>   Source channel name for frontmatter. Default: #daily-ai-update
+  --channel <name>   Source channel name for frontmatter. Default: #daily-ai-updates
 `);
 }
 
