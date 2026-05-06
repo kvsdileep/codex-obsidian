@@ -12,6 +12,10 @@ Ingest new web clips from .raw/articles. Create source notes, update concepts/en
 Ingest new tweet exports from .raw/tweets. Treat tweets as idea sparks: preserve author and URL when available, extract the core claim, and only create durable concept notes when the idea is reusable.
 ```
 
+```text
+From Slack #daily-ai-update, get the last 10 tweet URLs, fetch their content using scripts/fetch-x-tweets.mjs and the follow-builders X_BEARER_TOKEN in ~/.follow-builders/.env, save the raw markdown to .raw/tweets/YYYY-MM-DD-daily-ai-update.md, then ingest it.
+```
+
 ## Chats
 
 ```text

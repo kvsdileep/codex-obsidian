@@ -55,16 +55,19 @@ Best workflow:
 
 1. Make sure the Slack connector is enabled in Codex.
 2. Keep tweet URLs in `#daily-ai-update`.
-3. Add an X API bearer token in your local shell, not in Slack:
-
-```bash
-export X_BEARER_TOKEN="your_x_api_bearer_token"
-```
+3. Reuse the X API bearer token already configured by the `follow-builders` skill. The expected location is `~/.follow-builders/.env` with `X_BEARER_TOKEN` set. Do not copy the token into this vault.
 
 Then ask Codex:
 
 ```text
-From Slack #daily-ai-update, get the last 10 tweet URLs, fetch their tweet text through the X API, save them into .raw/tweets/YYYY-MM-DD-daily-ai-update.md, then ingest them.
+From Slack #daily-ai-update, get the last 10 tweet URLs, use scripts/fetch-x-tweets.mjs with the X_BEARER_TOKEN from ~/.follow-builders/.env, save them into .raw/tweets/YYYY-MM-DD-daily-ai-update.md, then ingest them.
+```
+
+The local helper can also be run directly:
+
+```bash
+printf '%s\n' 'https://x.com/user/status/1234567890' \
+  | node scripts/fetch-x-tweets.mjs --out .raw/tweets/YYYY-MM-DD-daily-ai-update.md
 ```
 
 Codex should save a raw markdown file like this:
@@ -135,7 +138,7 @@ ingest new web clips
 ```
 
 ```text
-From Slack #daily-ai-update, get the last 10 tweet URLs, fetch their content through X API, save to .raw/tweets, and ingest.
+From Slack #daily-ai-update, get the last 10 tweet URLs, fetch their content using scripts/fetch-x-tweets.mjs and the follow-builders X_BEARER_TOKEN, save to .raw/tweets, and ingest.
 ```
 
 ```text

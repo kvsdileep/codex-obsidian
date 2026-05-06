@@ -73,6 +73,20 @@ Tweets are usually idea sparks, not final truth. Preserve author, URL, date, and
 
 Recommended raw location: `.raw/tweets/`.
 
+For tweets collected from Slack, reuse the X API bearer token already configured by the `follow-builders` skill:
+
+- token file: `~/.follow-builders/.env`
+- variable: `X_BEARER_TOKEN`
+- helper: `node scripts/fetch-x-tweets.mjs`
+
+Do not print, copy, commit, or write the token into this vault. To fetch tweet text, collect tweet URLs from Slack, then pipe them into:
+
+```bash
+node scripts/fetch-x-tweets.mjs --out .raw/tweets/YYYY-MM-DD-daily-ai-update.md
+```
+
+The helper reads URLs from stdin or arguments, loads `~/.follow-builders/.env`, calls the X API, and writes raw markdown for ingestion.
+
 ### Exported Chats
 
 Chats are high-signal but noisy. Preserve the transcript as raw evidence and synthesize only what is durable:
@@ -126,6 +140,7 @@ The user plans to control this from Slack. When a Slack request is brief, infer 
 
 - "ingest new clips" means process new files in `.raw/articles/`.
 - "ingest tweets" means process new files in `.raw/tweets/`.
+- "get the last 10 tweets from #daily-ai-update" means search Slack for the latest 10 tweet URLs in that channel, fetch their content with `scripts/fetch-x-tweets.mjs`, save the raw markdown under `.raw/tweets/`, then ingest it.
 - "save this chat" means create a raw chat source if the transcript is provided, then synthesize it.
 - "what do we know about X?" means answer from `wiki/hot.md`, `wiki/index.md`, and relevant notes, then optionally file the answer in `wiki/questions/`.
 

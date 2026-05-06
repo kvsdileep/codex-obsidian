@@ -43,6 +43,14 @@ For tweets and chats, drop exports into:
 .raw/chats/
 ```
 
+Tweet enrichment reuses the X API bearer token from the `follow-builders` skill:
+
+```text
+~/.follow-builders/.env
+```
+
+The vault helper `scripts/fetch-x-tweets.mjs` loads `X_BEARER_TOKEN` from that file, so the token does not need to be copied into this repo.
+
 ## Daily Usage
 
 Start with [START_HERE.md](START_HERE.md) for the first Web Clipper, Slack tweet, and exported-chat workflows.
