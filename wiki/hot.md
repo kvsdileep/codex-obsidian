@@ -15,22 +15,21 @@ sources: []
 
 ## Last Updated
 
-2026-05-06 - Ingested 5 recent tweets from Slack `#daily-ai-updates`.
+2026-05-06 - Ingested two web clips and a Claude shared chat.
 
 ## Recent Context
 
-The first tweet ingest created [[wiki/sources/2026-05-06-daily-ai-updates|Daily AI Updates - 2026-05-06]] and the topic [[wiki/topics/AI Daily Updates|AI Daily Updates]].
+Recent ingests:
 
-Key themes:
+- [[wiki/sources/How to Build Your Own LLM Knowledge Base|How to Build Your Own LLM Knowledge Base]] introduced [[wiki/concepts/LLM Knowledge Base|LLM Knowledge Base]], [[wiki/concepts/Raw and Wiki Architecture|Raw and Wiki Architecture]], and [[wiki/concepts/AI as Librarian|AI as Librarian]].
+- [[wiki/sources/Claude Code 5-Layer Agent Development Kit|Claude Code 5-Layer Agent Development Kit]] introduced [[wiki/concepts/Layered Agent Architecture|Layered Agent Architecture]], [[wiki/concepts/Agent Development Kit|Agent Development Kit]], deterministic guardrails, bounded delegation, and distribution as agent runtime layers.
+- [[wiki/sources/Claude Agentic AI SDLC Curriculum Chat|Claude Agentic AI SDLC Curriculum Chat]] captured a Cheersin Interactive curriculum design thread around [[wiki/concepts/Agentic AI in the SDLC|Agentic AI in the SDLC]], [[wiki/concepts/Enterprise AI Governance|Enterprise AI Governance]], and [[wiki/concepts/Curriculum Scope Control|Curriculum Scope Control]].
+- [[wiki/sources/2026-05-06-daily-ai-updates|Daily AI Updates - 2026-05-06]] created the topic [[wiki/topics/AI Daily Updates|AI Daily Updates]].
 
-- [[wiki/entities/Gemma|Gemma]] claims up to 3x faster output using [[wiki/concepts/Multi-Token Prediction|multi-token prediction]] drafters.
-- [[wiki/entities/OpenAI|OpenAI]] is rolling out GPT-5.5 Instant in ChatGPT and appears to be preparing advertiser onboarding infrastructure.
-- [[wiki/entities/SubQ|SubQ]] claims a 12 million token context window with sub-quadratic sparse attention.
-- [[wiki/entities/Perplexity|Perplexity]] launched Perplexity Computer for Professional Finance with licensed data integrations and 35 finance workflows.
+Key active insight: this vault is itself an implementation of the raw-plus-wiki architecture described by the web clip. The Claude Code article adds a useful architecture lens for future Codex/Obsidian improvements: memory, skills, guardrails, delegation, and distribution. The Claude chat adds a separate workstream: converting enterprise Agentic AI curriculum drafts into modular 1-hour blocks.
 
 ## Active Threads
 
-- Configure Web Clipper to save markdown into `.raw/articles/`.
-- Drop tweet exports into `.raw/tweets/`.
-- Drop exported ChatGPT, Claude, or Codex chats into `.raw/chats/`.
+- Build the Cheersin Interactive curriculum as 1-hour blocks if the user resumes that work.
+- Keep using `.raw/articles/`, `.raw/tweets/`, and `.raw/chats/` as the source layer.
 - Verify whether the OpenAI ads page and SubQ performance claims have primary-source documentation.

@@ -19,3 +19,6 @@ Topic notes will appear here after ingestion.
 ## Active Topics
 
 - [[wiki/topics/AI Daily Updates|AI Daily Updates]]
+- [[wiki/topics/Personal AI Knowledge Systems|Personal AI Knowledge Systems]]
+- [[wiki/topics/Enterprise Agentic AI Training|Enterprise Agentic AI Training]]
+- [[wiki/topics/Agent Architecture|Agent Architecture]]
