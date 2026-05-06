@@ -31,6 +31,12 @@ __pycache__/
 # Obsidian local state
 .obsidian/workspace-mobile.json
 
+# Raw ingestion sources stay local. Keep only folder placeholders in git.
+.raw/**
+!.raw/
+!.raw/**/
+!.raw/**/.gitkeep
+
 # Large media by default
 *.mkv
 *.mp4
