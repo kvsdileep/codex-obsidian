@@ -1,39 +1,40 @@
 ---
 type: source
-title: "<% tp.file.title %>"
+title: "Source Title"
 source_type: article
 author: ""
-date_published: <% tp.date.now("YYYY-MM-DD") %>
 url: ""
-confidence: medium
-key_claims:
-  - ""
-created: <% tp.date.now("YYYY-MM-DD") %>
-updated: <% tp.date.now("YYYY-MM-DD") %>
+source_path: ""
+created: {{date}}
+updated: {{date}}
+status: seed
 tags:
   - source
-status: seed
 related: []
 sources: []
 ---
 
-# <% tp.file.title %>
+# Source Title
 
 ## Summary
 
-[2-3 sentence summary of the source]
 
 ## Key Claims
 
 -
 
-## Entities Mentioned
+## Useful Details
 
-- [[]] —
+-
 
-## Concepts Introduced
+## Entities
 
-- [[]] —
+-
 
-## Notes
+## Concepts
 
+-
+
+## Follow-Up Questions
+
+-

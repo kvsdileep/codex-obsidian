@@ -1,13 +1,14 @@
 {
+  "attachmentFolderPath": "_attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Inbox",
   "userIgnoreFilters": [
-    "agents/",
-    "commands/",
-    "hooks/",
-    "skills/",
+    ".git/",
+    ".raw/.manifest.json",
     "_templates/",
     "README.md",
-    "CLAUDE.md",
-    "WIKI.md",
-    "Welcome.md"
+    "AGENTS.md",
+    "CODEX.md",
+    "ATTRIBUTION.md"
   ]
 }

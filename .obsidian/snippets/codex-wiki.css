@@ -1,0 +1,22 @@
+body {
+  --codex-source: #4488d7;
+  --codex-concept: #b05fc4;
+  --codex-entity: #df7d24;
+  --codex-topic: #6bab56;
+}
+
+.nav-folder-title[data-path^="wiki/sources"] {
+  color: var(--codex-source);
+}
+
+.nav-folder-title[data-path^="wiki/concepts"] {
+  color: var(--codex-concept);
+}
+
+.nav-folder-title[data-path^="wiki/entities"] {
+  color: var(--codex-entity);
+}
+
+.nav-folder-title[data-path^="wiki/topics"] {
+  color: var(--codex-topic);
+}

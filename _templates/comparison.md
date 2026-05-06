@@ -1,38 +1,28 @@
 ---
-type: comparison
-title: "<% tp.file.title %>"
-subjects:
-  - "[[Subject A]]"
-  - "[[Subject B]]"
-dimensions:
-  - "dimension 1"
-  - "dimension 2"
-verdict: "Replace with one-line conclusion."
-created: <% tp.date.now("YYYY-MM-DD") %>
-updated: <% tp.date.now("YYYY-MM-DD") %>
+type: concept
+title: "Comparison"
+created: {{date}}
+updated: {{date}}
+status: seed
 tags:
   - comparison
-status: seed
 related: []
 sources: []
 ---
 
-# <% tp.file.title %>
+# Comparison
 
-## Overview
+## Question
 
-Replace with: why these two things are being compared and what question this answers.
 
 ## Comparison
 
-| Dimension | Subject A | Subject B |
-|-----------|-----------|-----------|
-| | | |
-| | | |
+| Dimension | Option A | Option B |
+| --- | --- | --- |
+|  |  |  |
 
-## Verdict
+## Takeaway
 
-Replace with: one clear conclusion — which is better for what use case.
 
 ## Sources
 

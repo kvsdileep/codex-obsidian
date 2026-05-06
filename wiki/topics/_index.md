@@ -1,17 +1,17 @@
 ---
 type: meta
-title: "Entities Index"
+title: "Topics Index"
 created: 2026-05-06
 updated: 2026-05-06
 status: evergreen
 tags:
   - meta
-  - entities
+  - topics
 related:
   - "[[wiki/index|Index]]"
 sources: []
 ---
 
-# Entities Index
+# Topics Index
 
-Entity notes will appear here after ingestion.
+Topic notes will appear here after ingestion.

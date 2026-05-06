@@ -1,31 +1,27 @@
 ---
 type: question
-title: "<% tp.file.title %>"
-question: ""
-answer_quality: draft
-created: <% tp.date.now("YYYY-MM-DD") %>
-updated: <% tp.date.now("YYYY-MM-DD") %>
+title: "Question"
+created: {{date}}
+updated: {{date}}
+status: developing
 tags:
   - question
-status: developing
 related: []
 sources: []
 ---
 
-# <% tp.file.title %>
+# Question
 
-**Question:** [restate the original query]
+## Question
+
 
 ## Answer
 
-[The synthesized answer, with citations to specific wiki pages]
 
-(Source: [[]])
+## Evidence
 
-## Confidence
+-
 
-[draft | solid | definitive] — [why]
-
-## Related Questions
+## Follow-Up
 
 -

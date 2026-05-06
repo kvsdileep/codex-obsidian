@@ -1,17 +1,17 @@
 ---
 type: meta
-title: "Entities Index"
+title: "Questions Index"
 created: 2026-05-06
 updated: 2026-05-06
 status: evergreen
 tags:
   - meta
-  - entities
+  - questions
 related:
   - "[[wiki/index|Index]]"
 sources: []
 ---
 
-# Entities Index
+# Questions Index
 
-Entity notes will appear here after ingestion.
+Durable answers will appear here when useful.
